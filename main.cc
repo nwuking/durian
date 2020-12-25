@@ -1,8 +1,10 @@
 #include "./argsParse.h"
 #include "./procInfo.h"
+#include "./cpu.h"
 
 #include <iostream>
 #include <string.h>
+#include <unistd.h>
 
 int main(int argc, char **argv) 
 {
@@ -13,6 +15,9 @@ int main(int argc, char **argv)
         ::exit(0);
     }
     durian::ProcInfo s1;
-    s1.test();
+    ::sleep(5);
+    durian::ProcInfo s2;
+    durian::Cpu cal(s1, s2);
+    cal.cpuAll();
     return 0;
 }

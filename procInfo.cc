@@ -7,4 +7,8 @@ namespace durian
     {
         _stat.getData();
     }
+    void ProcInfo::cpuAll(ulong &active, ulong &idle) {
+        _stat.getActive(active);
+        _stat.getidle(idle);
+    }
 }

@@ -12,9 +12,10 @@ namespace durian
     public:
         ProcInfo();
         ~ProcInfo() = default;
-        void test() {
-            _stat.test();
-        }
+        void cpuAll(ulong &active, ulong &idle);
+        //void test() {
+        //    _stat.test();
+        //}
     private:
         ProcStat _stat;
     };
