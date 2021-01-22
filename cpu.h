@@ -17,8 +17,6 @@ namespace durian
                                           _active2(0), _idle2(0) {}
         ~Cpu() = default;
         void cpuAll();
-        void cpuProcess();
-        void cpuThread();
     private:
         ProcInfo &_s1;
         ProcInfo &_s2;

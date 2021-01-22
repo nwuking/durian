@@ -15,7 +15,7 @@ int main(int argc, char **argv)
         ::exit(0);
     }
     durian::ProcInfo s1;
-    ::sleep(5);
+    ::sleep(1);                                            //  根据需要，自由调整睡眠时间，使两个快照时间间隔尽可能小
     durian::ProcInfo s2;
     durian::Cpu cal(s1, s2);
     cal.cpuAll();
